@@ -3,7 +3,6 @@ run-name: Exemplo workflow para artifact
 on: 
   workflow_dispatch:
 
-
 env:
   nome-artefato: test-artefato
   
@@ -27,6 +26,7 @@ jobs:
         with: 
           name: ${{ env.nome-artefato }}
           path: ./artefator
+    
       - name: Listagem de arquivos
         run: ls
 
