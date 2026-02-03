@@ -25,7 +25,7 @@ jobs:
           fabricioveronez/aula-primeira-pipeline:latest 
   CD:
     needs: [CI]
-    uses: fsv-aula/primeira-pipeline-cicd/.github/workflows/deploy.yaml@main
+    uses: RafaelFerSilva/primeira-pipeline-cicd/.github/workflows/deploy.yaml@main
     with:
       manifests: |
         k8s/deployment.yaml
